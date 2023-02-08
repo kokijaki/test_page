@@ -1,0 +1,22 @@
+---
+layout: default
+title: kb3
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    {{ page.title }}
+  </head>
+  <body>
+    <h1>{{ "Hello World!" | downcase }}</h1>
+    {% if page.show_sidebar %}
+        <div class="sidebar">
+            sidebar content
+        </div>
+    {% endif %}
+    {{ "hi" | capitalize }}
+    hello, hello
+  </body>
+</html>
